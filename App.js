@@ -17,8 +17,8 @@ export default class App extends Component {
       <Judul/>
         <Text style={styles.welcome}>
           =====WELCOME-GAN!=====
-          <Image style={{width :210,heigh :210}}
-          source={require('./umam.jpg')}/>
+          <Image style={{width :200,heigh :200}}
+          source={require('./my2.jpg')}/>
         </Text>
         <Text>nama: yacob krisna putra</Text>
         <Text>kelas: XI RPL 2</Text>
