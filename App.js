@@ -5,30 +5,24 @@
  */
 
 import React, { Component } from 'react';
-import {
-  Platform,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
+import {StyleSheet, Text, View, Image} from 'react-native';
+import Judul from './components/Judul'
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' +
-    'Cmd+D or shake for dev menu',
-  android:'Nama: Yacob Krisna Putra\n'+'Kelas:XI RPL 2\n'+'Absen:38\n'
-});
 
-type Props = {};
-export default class App extends Component<Props> {
+
+export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
+      <Judul/>
         <Text style={styles.welcome}>
           =====WELCOME-GAN!=====
+          <Image style={{width :210,heigh :210}}
+          source={require('./umam.jpg')}/>
         </Text>
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text>
+        <Text>nama: yacob krisna putra</Text>
+        <Text>kelas: XI RPL 2</Text>
+        <Text>no:38</Text>
       </View>
     );
   }
